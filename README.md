@@ -8,6 +8,7 @@ Libft is the first major project in the 42 curriculum. The objective is to recre
 
 By rebuilding these utilities from scratch, the project helps develop a deep understanding of how common C functions work internally and provides a personal library that can be reused in future projects.
 
+---
 
 ## Part 1 - libc functions
 
@@ -60,11 +61,15 @@ By rebuilding these utilities from scratch, the project helps develop a deep und
 |`ft_lstiter`|`void ft_lstiter(t_list *lst, void (*f)(void *));`| None | Iterate the list and apply the function 'f' to the content of each node |
 |`ft_lstmap`|`t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));`| New list | Iterate the list 'lst' and apply the function 'f' to the content of each node. Create a new list resulting from the successive applications of 'f'. The function 'del' is used to delete the content if needed |
 
+---
+
 ## 👤 Author
 
-clagarci
+**clagarci**
 
 42 Student
+
+---
 
 ## 📜 License
 
