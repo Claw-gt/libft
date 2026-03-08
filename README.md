@@ -63,7 +63,7 @@ By rebuilding these utilities from scratch, the project helps develop a deep und
 
 ---
 
-⚙️ Compilation
+## ⚙️ Compilation
 
 To compile the library:
 
