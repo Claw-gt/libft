@@ -4,7 +4,7 @@
 | ------- | ------- | ------ |
 | libft.a | Makefile, libft.h , ft_*.c|Make your own library |
 
-## Parte 1 - Funciones de libc
+## Part 1 - libc functions
 
 | Function | Prototype | Return value | Description |
 |--------- | ----------- | ------- | ------ |
@@ -32,7 +32,7 @@
 |`ft_calloc` |`void *calloc(size_t nmemb, size_t size)` | The malloc() and calloc() functions return a pointer to the allocated memory, which is suitably aligned for any built-in type.  On  error,  these  functions return NULL | The calloc() function allocates memory for an array of nmemb elements of size bytes each and returns a pointer to the allocated memory. The  memory is set to zero.  If nmemb or size is 0, then calloc() returns either NULL, or a unique pointer value that can later be successfully passed to free().  If the multiplication of nmemb and size would result in integer overflow, then calloc() returns an  error |
 |`ft_strdup` |`char *strdup(const char *s)` | On success, the strdup() function returns a pointer to the duplicated string.  It returns NULL if insufficient  memory  was  available, with errno set to indicate the cause of the error| The  strdup()  function  returns a pointer to a new string which is a duplicate of the string s.  Memory for the new string is obtained with malloc(3), and can be freed with free(3)|
 
-## Parte 2 - Funciones adicionales
+## Part 2 - Additional Functions
 
 | Function | Prototype | Return value | Description |
 |--------- | ----------- | ------- | ------ |
