@@ -1,8 +1,13 @@
-# libft
+# 📚 Libft
 
-|**Name of the program** |**Files**|**Description**|
-| ------- | ------- | ------ |
-| libft.a | Makefile, libft.h , ft_*.c|Make your own library |
+> A custom implementation of standard C library functions, developed as part of the 42 School curriculum.
+
+## 📖 Description
+
+Libft is the first major project in the 42 curriculum. The objective is to recreate a set of standard C library functions while learning the fundamentals of memory management, strings, linked lists, and low-level programming.
+
+By rebuilding these utilities from scratch, the project helps develop a deep understanding of how common C functions work internally and provides a personal library that can be reused in future projects.
+
 
 ## Part 1 - libc functions
 
@@ -40,3 +45,27 @@
 |`ft_strjoin`|`char *ft_strjoin(char const *s1, char const *s2);`| New string. NULL if dynamic allocation fails| Allocate (with malloc(3)) and return a new string formed by concatenation between 's1' and 's2'|
 |`ft_strtrim`|`char *ft_strtrim(char const *s1, char const *set);`| Trimmed string. NULL if dynamic allocation fails| Delete all characters of string 'set' from the beginning and from the end until finding a character not belonging to 'set'|
 |`ft_split`|`char **ft_split(char const *s, char c);`| Array of new strings resulted from the split. NULL if dynamic allocation fails| Allocate an array of strings resulted from splitting string 's' on substrings with character 'c' as delimiter|
+
+## Part 3 - Linked lists
+
+| Function | Prototype | Return value | Description |
+|--------- | ----------- | ------- | ------ |
+|`ft_lstnew`|`t_list *ft_lstnew(void *content);`| New list node | Allocate (with malloc(3)) and return a new node. The member variable 'content' is initialized with the value of the parameter 'content'. The variable 'next' is initialized to NULL |
+|`ft_lstadd_front`|`void ft_lstadd_front(t_list **lst, t_list *new);`| None | Add the node 'new' at the beginning of the list |
+|`ft_lstsize`|`int ft_lstsize(t_list *lst);`| Length of the list | Count the number of nodes in the list |
+|`ft_lstlast`|`t_list *ft_lstlast(t_list *lst);`| Last node of the list | Return the last node of the list |
+|`ft_lstadd_back`|`void ft_lstadd_back(t_list **lst, t_list *new);`| None | Add the node 'new' at the end of the list |
+|`ft_lstdelone`|`void ft_lstdelone(t_list *lst, void (*del)(void*));`| None | Take as parameter a node and free its content using the function 'del', then free the node itself |
+|`ft_lstclear`|`void ft_lstclear(t_list **lst, void (*del)(void*));`| None | Delete and free the given node and every successor of that node, using the function 'del'. Finally, the pointer to the list must be set to NULL |
+|`ft_lstiter`|`void ft_lstiter(t_list *lst, void (*f)(void *));`| None | Iterate the list and apply the function 'f' to the content of each node |
+|`ft_lstmap`|`t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));`| New list | Iterate the list 'lst' and apply the function 'f' to the content of each node. Create a new list resulting from the successive applications of 'f'. The function 'del' is used to delete the content if needed |
+
+## 👤 Author
+
+clagarci
+
+42 Student
+
+## 📜 License
+
+This project is developed for educational purposes as part of the 42 School curriculum.
