@@ -63,6 +63,18 @@ By rebuilding these utilities from scratch, the project helps develop a deep und
 
 ---
 
+⚙️ Compilation
+
+To compile the library:
+
+`make`
+
+This generates the static library:
+
+`libft.a`
+
+---
+
 ## 👤 Author
 
 **clagarci**
